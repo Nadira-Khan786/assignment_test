@@ -1,0 +1,41 @@
+.login-form {
+  flex: 1 0 100%;
+  max-width: 380px;
+  padding: 40px;
+  height: 400px;
+.header-form{
+  display: flex;
+  justify-content: center;
+  .icon{
+    color: var(--bg-secondary);
+    font-size: 98px;
+  }
+}
+  .login-form-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .btn {
+      width: 100%;
+      background-color: var(--bg-secondary);
+      height: 44px;
+
+    }
+    .btn:hover {
+      width: 100%;
+      background-color: var(--bg-secondary);
+      height: 44px;
+    }
+  }
+  .message {
+    display: flex;
+    justify-content: left;
+    font-size: 12px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .login-form {
+    max-width: 310px;
+    padding: 20px;
+  }
+}

@@ -1,0 +1,17 @@
+.login-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--bg-secondary);
+  .login-box {
+    background-color: var(--text-primary);
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.16);
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 12px;
+    @media screen and (max-width: 720px) {
+      width: 320px;
+    }
+  }
+}

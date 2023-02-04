@@ -1,0 +1,105 @@
+.Home-ctn {
+  display: flex;
+  .left-ctn {
+    width: 100%;
+    padding: 16px;
+    .item {
+      margin-top: 10px;
+      padding: 5px;
+      .title {
+        font-size: 28px;
+        display: flex;
+        flex-wrap: wrap;
+        font-weight: bolder;
+      }
+      .item-ctn {
+        .img-ctn {
+          height: 450px;
+          width: 100%;
+          border-radius: 8px;
+          object-fit: cover;
+          margin-top: 10px;
+        }
+        .content {
+          margin-top: 10px;
+          display: flex;
+          flex-wrap: wrap;
+          font-size: 14px;
+          color: #000;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+  .right-ctn {
+    padding: 16px;
+    .card {
+      margin-top: 10px;
+      background: var(--bg-secondary);
+      border-radius: 0.25rem;
+      box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+      display: flex;
+      flex-direction: row;
+      overflow: hidden;
+      .card_image {
+        height: 100px;
+        width: 50%;
+      }
+      .card_content {
+        padding: 1rem;
+        background: var(--bg-secondary);
+      }
+      .card_text {
+        color: var(--text-primary);
+        font-size: 11px;
+      }
+      .card_title {
+        color: var(--text-primary);
+        font-size: 1.1rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        text-transform: capitalize;
+        margin: 0px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .Home-ctn {
+    display: block;
+    padding: 4px;
+    width: 88vw;
+    .css-480o17-MuiGrid-root > .MuiGrid-item,
+    .css-480o17-MuiGrid-root > .MuiGrid-item {
+      padding: 6px !important;
+    }
+    .left-ctn {
+      padding-left: 4px !important;
+      .item {
+        margin-top: 5px;
+        padding: 0px;
+        .title {
+          font-size: 18px;
+        }
+        .item-ctn {
+          .img-ctn {
+            height: 150px;
+            width: 100%;
+            border-radius: 8px;
+            object-fit: cover;
+            margin-top: 2px;
+          }
+          .content {
+            margin-top: 5px;
+            font-size: 11px;
+          }
+        }
+      }
+    }
+    .right-ctn {
+      padding-left: 0px;
+      display: none;
+    }
+  }
+}
